@@ -31,4 +31,3 @@ print(f"If we divide {num1} by {num2} we get {num1 / num2}. But if we need the w
 
 #check if numbers still correct
 num1 == (num1 // num2) * num2 + (num1 % num2)
-num2 == (num2 // num1) * num1 + (num2 % num1)
