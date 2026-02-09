@@ -1,11 +1,41 @@
+import json
+
+
 #temporary dict data for calculations :P no CSV or JSON Parsin yet
-delivery_data = [
-        {"driver_id": "D1", "pickup_time": "09:00", "dropoff_time": "09:30", "distance_km": 10},
-        {"driver_id": "D2", "pickup_time": "09:15", "dropoff_time": "10:00", "distance_km": 20},
-        {"driver_id": "D1", "pickup_time": "10:00", "dropoff_time": "10:45", "distance_km": 15},
-        {"driver_id": "D3", "pickup_time": "09:30", "dropoff_time": "09:50", "distance_km": 5},
-        {"driver_id": "D2", "pickup_time": "10:30", "dropoff_time": "11:30", "distance_km": 25},
-    ]
+#delivery_data = [
+ #       {"driver_id": "D1", "pickup_time": "09:00", "dropoff_time": "09:30", "distance_km": 10},
+  #      {"driver_id": "D2", "pickup_time": "09:15", "dropoff_time": "10:00", "distance_km": 20},
+   #     {"driver_id": "D1", "pickup_time": "10:00", "dropoff_time": "10:45", "distance_km": 15},
+    #    {"driver_id": "D3", "pickup_time": "09:30", "dropoff_time": "09:50", "distance_km": 5},
+     #   {"driver_id": "D2", "pickup_time": "10:30", "dropoff_time": "11:30", "distance_km": 25},
+    #]
+
+
+#my Noob try of a json parser :) using pythons json lib. Not able to code my own parser.... YET
+data = json.load(open("deliveries.json"))
+delivery_data = data["delivery_data"]
+
+already_seen = set()
+
+for delivery in delivery_data:
+    if delivery["delivery_id"] in already_seen:
+        raise ValueError ("Duplicate delivery ID")
+
+    else:
+        already_seen.add(delivery["delivery_id"])
+
+
+
+
+
+print (type (delivery_data))
+print (delivery_data)
+
+
+
+
+
+
 
 #determines slowest Driver
 slowest = None

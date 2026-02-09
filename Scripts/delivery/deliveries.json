@@ -1,0 +1,18 @@
+{
+  "delivery_data": [
+    {
+      "delivery_id": "550e8400-e29b-41d4-a716-446655440000",
+      "driver_id": "D1",
+      "pickup_time": "09:00",
+      "dropoff_time": "09:30",
+      "distance_km": 10
+    },
+    {
+      "delivery_id": "550e8400-e29b-41d4-a716-446655440000",
+      "driver_id": "D1",
+      "pickup_time": "09:00",
+      "dropoff_time": "09:30",
+      "distance_km": 10
+    }
+  ]
+}
