@@ -1,4 +1,5 @@
 import json
+from unicodedata import digit
 
 #my Noob try of a json parser :) using pythons json lib. Not able to code my own parser.... YET
 data = json.load(open("deliveries.json"))
@@ -41,17 +42,31 @@ slowest_driver = None
 #function to natively convert HH:MM form a string to an integers in Minutes
 def conversion_to_minutes(time_str):
 
-    parts = time_str.split(":")
-    hours = int(parts[0])
-    minutes = int(parts[1])
+    if len(time_str) != 5:
+        raise ValueError ("Invalid time format: Correct format: HH:MM")
+
+    if time_str[2] != ":":
+        raise ValueError ("Invalid time format: divider must be :")
+
+    if not time_str[0:2].isdigit():
+         raise ValueError ("Invalid time format: HH needs to be digits")
+
+    if not time_str[3:5].isdigit():
+        raise ValueError ("Invalid time format: MM needs to be digits")
+
+    hours = int(time_str[0:2])
+    minutes = int(time_str[3:5])
+
+
     if hours > 23:
         raise ValueError ("Hours cannot be more than 23")
+
     if minutes > 59:
         raise ValueError ("Minutes cannot be more than 59")
 
-    time = (hours * 60) + minutes
+    total_minutes = (hours * 60) + minutes
 
-    return time
+    return total_minutes
 
 #Empty Driver Stats dict
 driver_stats = {}
