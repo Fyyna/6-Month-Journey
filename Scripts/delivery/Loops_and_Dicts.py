@@ -136,12 +136,16 @@ for driver_id, stats in driver_stats.items():
     #calculates average speed based on total distance and minutes / 60 to get KM/H
     average_speed = total_distance_km / (total_time_minutes / 60)
 
+    if average_speed < 15:
+        if slowest is None or average_speed < slowest:
+            slowest = average_speed
+            slowest_driver = driver_id
 
-    if slowest is None or average_speed < slowest:
-       slowest = average_speed
-       slowest_driver = driver_id
 
 
-    print(f"Driver ID: {driver_id}, Average Distance: {average_distance} km, Average Speed:{average_speed: .2f} KM/H")
+    print(f"Driver ID: {driver_id}, Average Distance: {average_distance: .2f} km, Average Speed:{average_speed: .2f} KM/H")
 
-print (f"slowest driver was: {slowest_driver} fire this bitch")
+if slowest_driver is not None:
+    print (f"slowest driver was: {slowest}")
+else:
+    print (f"All drivers drove an acceptable speed")
