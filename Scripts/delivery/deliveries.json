@@ -9,7 +9,7 @@
     {"delivery_id":"550e8400-e29b-41d4-a716-446655440007","driver_id":"D7","pickup_time":"08:30","dropoff_time":"09:10","distance_km":24},
     {"delivery_id":"550e8400-e29b-41d4-a716-446655440008","driver_id":"D8","pickup_time":"08:35","dropoff_time":"09:00","distance_km":12},
     {"delivery_id":"550e8400-e29b-41d4-a716-446655440009","driver_id":"D9","pickup_time":"08:40","dropoff_time":"09:05","distance_km":14},
-    {"delivery_id":"550e8400-e29b-41d4-a716-446655440010","driver_id":"D10","pickup_time":"09:45","dropoff_time":"09:25","distance_km":26},
+    {"delivery_id":"550e8400-e29b-41d4-a716-446655440010","driver_id":"D10","pickup_time":"09:25","dropoff_time":"09:45","distance_km":26},
 
     {"delivery_id":"550e8400-e29b-41d4-a716-446655440011","driver_id":"D1","pickup_time":"09:00","dropoff_time":"09:30","distance_km":17},
     {"delivery_id":"550e8400-e29b-41d4-a716-446655440012","driver_id":"D2","pickup_time":"09:05","dropoff_time":"09:25","distance_km":7},
