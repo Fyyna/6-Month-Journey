@@ -23,8 +23,8 @@ for delivery in delivery_data:
 
 
 
-print (type (delivery_data))
-print (delivery_data)
+#print (type (delivery_data))
+#print (delivery_data)
 
 
 
