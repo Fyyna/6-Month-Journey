@@ -1,3 +1,5 @@
+Explanation of stuff
+
 Codes:
 TECH_BLOCKER (hard limitation)
 BLOCKER_REMOVED (limitation removed)
