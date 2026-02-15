@@ -1,0 +1,20 @@
+Codes:
+TECH_BLOCKER (hard limitation)
+BLOCKER_REMOVED (limitation removed)
+SCOPE_TOO_BIG (effort exploded)
+DUPLICATE (already exists / you already did it)
+LOW_VALUE (not worth it after reflection)
+DEPENDENCY (blocked by missing tool/data/person)
+RISK (ToS/security/legal/fragility)
+BETTER_ALTERNATIVE (found a superior path)
+ASSUMPTION_WRONG (your premise was false)
+TIME_SENSITIVE (missed window / outdated)
+RESOURCE_COST (money/time/infra too high)
+
+Status:
+new
+triage
+parked
+active
+done
+killed

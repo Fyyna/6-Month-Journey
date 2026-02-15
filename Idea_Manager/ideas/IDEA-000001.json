@@ -1,0 +1,23 @@
+{
+  "id": "IDEA-000001",
+  "created_at": "2026-02-15T14:19:45+00:00",
+  "updated_at": "2026-02-15T14:19:45+00:00",
+  "last_event_id": "EVT-000001",
+  "title": "test",
+  "description": "first example",
+  "category": "test",
+  "status": "new",
+  "potential": 1,
+  "effort": null,
+  "next_step": "no next step required",
+  "next_review_at": null,
+  "tags": [],
+  "history": [
+    {
+      "event_id": "EVT-000001",
+      "at": "2026-02-15T14:19:45+00:00",
+      "type": "created",
+      "note": "Initial capture"
+    }
+  ]
+}
