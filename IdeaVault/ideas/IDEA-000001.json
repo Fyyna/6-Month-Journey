@@ -1,0 +1,23 @@
+{
+  "id": "IDEA-000001",
+  "created_at": "2026-02-16T11:22:32+00:00",
+  "updated_at": "2026-02-16T11:22:32+00:00",
+  "last_event_id": "EVT-000001",
+  "title": "Dashboard",
+  "description": "This is a dashboard that is suposed to run on my homeserver. im mainly creating this so i can learn how something like that works!",
+  "category": "Server",
+  "status": "new",
+  "potential": 6,
+  "effort": null,
+  "next_step": "No next step yet im focusing on the ideavault for now",
+  "next_review_at": null,
+  "tags": [],
+  "history": [
+    {
+      "event_id": "EVT-000001",
+      "at": "2026-02-16T11:22:32+00:00",
+      "type": "created",
+      "note": "Initial capture"
+    }
+  ]
+}

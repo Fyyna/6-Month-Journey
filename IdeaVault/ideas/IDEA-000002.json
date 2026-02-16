@@ -1,0 +1,23 @@
+{
+  "id": "IDEA-000002",
+  "created_at": "2026-02-16T11:24:15+00:00",
+  "updated_at": "2026-02-16T11:24:15+00:00",
+  "last_event_id": "EVT-000001",
+  "title": "Ideavault",
+  "description": "This is a script that helps me track all the ideas i have (waaaaaay to many) so i dont lose anything important :)",
+  "category": "Python",
+  "status": "new",
+  "potential": 9,
+  "effort": null,
+  "next_step": "Next step is being able to mutate existing ideas. also i want it to log activities",
+  "next_review_at": null,
+  "tags": [],
+  "history": [
+    {
+      "event_id": "EVT-000001",
+      "at": "2026-02-16T11:24:15+00:00",
+      "type": "created",
+      "note": "Initial capture"
+    }
+  ]
+}
