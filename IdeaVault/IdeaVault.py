@@ -189,8 +189,15 @@ def show_idea():
     idea = load_idea(idea_id)
     print (json.dumps(idea, ensure_ascii=False, indent=2))
 
-print (show_idea())
 
 
-#def show_idea_history():
 
+def show_idea_history():
+    input_number = int(input("Input the Idea Number: "))
+    idea_id = f"IDEA-{input_number:06d}"
+    idea = load_idea(idea_id)
+    history = [idea["history"]]
+    for event in history:
+        print(event)
+
+print (show_idea_history())
